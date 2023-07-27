@@ -1,0 +1,28 @@
+.DS_Store
+__pycache__
+*.py[cod]
+*$py.class
+*.pid
+.history
+data/
+.env.*
+.envrc
+.venv/
+.idea/
+
+# Visual Studio Code #
+.vscode/
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# emacs
+*.org
+
+# pyenv
+.python-version
+
+#tests
+.coverage
+
