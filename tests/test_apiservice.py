@@ -50,9 +50,9 @@ def test_fetch_api_data(mocker, tmp_folder, mocked_api_response):
 def test_apiservice_run(mocker, tmp_folder, mocked_api_response):
     from src.Application.App import App
 
-    app = App(url='http://dummy.local', path=TMP_FOLDER)
+    api_service = ApiService(url='http://dummy.local', path=TMP_FOLDER, override_files=True)
     mocker.patch("requests.get", return_value=mocked_api_response)
-    app.api_service().run()
+    api_service.run()
 
     # validate files
     files_present = False
